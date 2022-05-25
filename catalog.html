@@ -50,7 +50,7 @@
         <form class="catalog-filters-form" action="https://echo.htmlacademy.ru/" method="get">
       
           <fieldset class="catalog-filters-item">
-            <legend>Сортировка: </legend>
+            <legend class="filter-subtitle">Сортировка: </legend>
             <select name="sort" id="sort">
               <option value="popular">по популярности</option>
               <option value="price">по цене</option>
@@ -59,19 +59,27 @@
           </fieldset>
 
           <fieldset class="catalog-filters-item">
-            <legend>Цена:
-              <span>100 ₽</span>
-              <span>-</span>
-              <span>500 ₽</span>
-            </legend>
-            <div>
-              <button type="button">От</button>
-              <button type="button">До</button>
-            </div>
+            <legend class="filter-subtitle">Цена:</legend>
+            <p>
+              <label for="filter-price-from">
+                <span class="visually-hidden">От</span>
+              </label>
+              <input type="number" name="price-from" value="100" id="filter-price-from">
+              <span class="filter-subtitle">₽ -</span>
+              <label for="filter-price-to">
+                <span class="visually-hidden">До</span>
+              </label>
+              <input type="number" name="price-to" value="500" id="filter-price-to">
+              <span class="filter-subtitle">₽</span>
+            </p>
+            <p>
+              <input type="range" min="0" max="1000" value="100" step="10">
+              <input type="range" min="0" max="1000" value="500" step="10">
+            </p>
           </fieldset>
 
           <fieldset class="catalog-filters-item">
-            <legend>Жирность:</legend>
+            <legend class="filter-subtitle">Жирность:</legend>
             <p>
               <input type="radio" name="fatness" id="fatness1" value="0">
               <label for="fatness1">0%</label>  
@@ -91,7 +99,7 @@
           </fieldset>
 
           <fieldset class="catalog-filters-item">
-            <legend>Наполнители:</legend>
+            <legend class="filter-subtitle">Наполнители:</legend>
             <p>
               <input type="checkbox" name="ingredient-choсolate" id="ingredient-choсolate" value="1">
               <label for="ingredient-choсolate">шоколадные</label>
