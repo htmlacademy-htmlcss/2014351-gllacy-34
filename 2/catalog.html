@@ -11,25 +11,25 @@
         <a class="navigation-logo" href="index.html"><img src="#" alt="Логотип Глейси"></a>
         <ul class="navigation-list">
           <li class="navigation-item">
-            <a href="catalog.html">Каталог</a>
+            <a class="navigation-link navigation-link-catalog">Каталог</a>
           </li>
           <li class="navigation-item">
-            <a href="#">Доставка и оплата</a>
+            <a class="navigation-link navigation-link-delivery" href="#">Доставка и оплата</a>
           </li>
           <li class="navigation-item">
-            <a href="#">О компании</a>
+            <a class="navigation-link navigation-link-about" href="#">О компании</a>
           </li>
         </ul>
-        <a href="tel:+78005558628">+7 800 555-86-28</a>
-        <ul class="navigation-list">
-          <li class="navigation-item">
-            <a class="navigation-link navigation-link-search" href="#"><span class="visually-hidden">Поиск</span></a>
+        <a class="phone-link" href="tel:+78005558628">+7 800 555-86-28</a>
+        <ul class="user-navigation-list">
+          <li class="user-navigation-item">
+            <a class="user-navigation-link user-navigation-search" href="#"><span class="visually-hidden">Поиск</span></a>
           </li>
-          <li class="navigation-item">
-            <a class="navigation-link navigation-link-login" href="#">Вход</a>
+          <li class="user-navigation-item">
+            <a class="user-navigation-link user-navigation-login" href="#">Вход</a>
           </li>
-          <li class="navigation-item">
-            <a class="navigation-link navigation-link-basket"  href="#">Корзина</a>
+          <li class="user-navigation-item">
+            <a class="user-navigation-link user-navigation-basket"  href="#">Корзина</a>
           </li>
         </ul>
       </nav>
@@ -43,9 +43,6 @@
           <li class="breadcrumbs-item">
             <a class="breadcrumbs-link" href="#">Каталог</a>
           </li>
-          <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link">Сливочное мороженое</a>
-          </li>
         </ul>
         <h1 class="subtitle">Сливочное мороженое</h1>
       </section>
@@ -57,14 +54,16 @@
             <legend>Сортировка: </legend>
             <select name="sort" id="sort">
               <option value="popular">по популярности</option>
+              <option value="price">по цене</option>
+              <option value="availability">по наличию</option>
             </select>
           </fieldset>
 
           <fieldset class="catalog-filters-item">
             <legend>Цена:
-              <span>100 &#8381;</span>
+              <span>100 ₽</span>
               <span>-</span>
-              <span>500 &#8381;</span>
+              <span>500 ₽</span>
             </legend>
             <div>
               <button type="button">От</button>
@@ -95,23 +94,23 @@
           <fieldset class="catalog-filters-item">
             <legend>Наполнители:</legend>
             <p>
-              <input type="checkbox" name="ingredient" id="ingredient-choсolate" value="choсolate">
+              <input type="checkbox" name="ingredient-choсolate" id="ingredient-choсolate" value="1">
               <label for="ingredient-choсolate">шоколадные</label>
             </p>
             <p>
-              <input type="checkbox" name="ingredient" id="ingredient-sprinkles" value="sprinkles">
+              <input type="checkbox" name="ingredient-sprinkles" id="ingredient-sprinkles" value="1">
               <label for="ingredient-sprinkles">сахарные посыпки</label>
             </p>
             <p>
-              <input type="checkbox" name="ingredient" id="ingredient-fruit" value="fruit">
+              <input type="checkbox" name="ingredient-fruit" id="ingredient-fruit" value="1">
               <label for="ingredient-fruit">фрукты</label>
             </p>
             <p>
-              <input type="checkbox" name="ingredient" id="ingredient-syrup" value="syrup">
+              <input type="checkbox" name="ingredient-syrup" id="ingredient-syrup" value="1">
               <label for="ingredient-syrup">сиропы</label>
             </p>
             <p>
-              <input type="checkbox" name="ingredient" id="ingredient-jam" value="jam">
+              <input type="checkbox" name="ingredient-jam" id="ingredient-jam" value="1">
               <label for="ingredient-jam">джемы</label>
             </p>
           </fieldset>
@@ -269,7 +268,7 @@
         </ol>
         <button class="button main-button" type="button">Показать еще</button>
         <div class="pagination">
-          <a class="pagination-prev" href="#">Назад</a>
+          <a class="pagination-arrow pagination-arrow-prev" href="#">Назад</a>
           <ol class="pagination-list"> 
             <li class="pagination-item"><a class="pagination-link" href="#">1</a></li>
             <li class="pagination-item"><a class="pagination-link" href="#">2</a></li>
@@ -277,7 +276,7 @@
             <li class="pagination-item"><a class="pagination-link" href="#">4</a></li>
             <li class="pagination-item"><a class="pagination-link" href="#">5</a></li>
           </ol>
-          <a class="pagination-next" href="#">Вперед</a>
+          <a class="pagination-arrow pagination-arrow-next" href="#">Вперед</a>
         </div>
        
       </section>
