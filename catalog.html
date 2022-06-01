@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
+    <link rel="stylesheet" href="styles/style.css">
   </head>
   <body>
     <header class="main-header">
@@ -13,10 +14,10 @@
             <a class="navigation-link navigation-link-catalog">Каталог</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link navigation-link-delivery" href="#">Доставка и оплата</a>
+            <a class="navigation-link" href="#">Доставка и оплата</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link navigation-link-about" href="#">О компании</a>
+            <a class="navigation-link" href="#">О компании</a>
           </li>
         </ul>
         <a class="phone-link" href="tel:+78005558628">+7 800 555-86-28</a>
@@ -28,7 +29,7 @@
             <a class="user-navigation-link user-navigation-login" href="#">Вход</a>
           </li>
           <li class="user-navigation-item">
-            <a class="user-navigation-link user-navigation-basket"  href="#">Корзина</a>
+            <a class="user-navigation-link user-navigation-basket"  href="#"><span class="visually-hidden">Корзина</span> 2 товара</a>
           </li>
         </ul>
       </nav>
@@ -52,26 +53,26 @@
           <fieldset class="catalog-filters-item">
             <legend class="filter-subtitle">Сортировка: </legend>
             <select name="sort" id="sort">
-              <option value="popular">по популярности</option>
-              <option value="price">по цене</option>
-              <option value="availability">по наличию</option>
+              <option class="filters-option" value="popular">по популярности</option>
+              <option class="filters-option" value="price">по цене</option>
+              <option class="filters-option" value="availability">по наличию</option>
             </select>
           </fieldset>
 
           <fieldset class="catalog-filters-item">
             <legend class="filter-subtitle">Цена:</legend>
-            <p>
+            
               <label for="filter-price-from">
                 <span class="visually-hidden">От</span>
               </label>
-              <input type="number" name="price-from" value="100" id="filter-price-from">
+              <input class="filter-price-input" type="number" name="price-from" value="100" id="filter-price-from">
               <span class="filter-subtitle">₽ -</span>
               <label for="filter-price-to">
                 <span class="visually-hidden">До</span>
               </label>
-              <input type="number" name="price-to" value="500" id="filter-price-to">
+              <input class="filter-price-input" type="number" name="price-to" value="500" id="filter-price-to">
               <span class="filter-subtitle">₽</span>
-            </p>
+           
             <p>
               <input type="range" min="0" max="1000" value="100" step="10">
               <input type="range" min="0" max="1000" value="500" step="10">
@@ -317,8 +318,8 @@
         <li class="footer-navigation-item"><a class="footer-navigation-link" href="#">Экологические стандарты</a></li>
       </ul>
       <div class="copyright">
-        <a href="https://htmlacademy.ru/"><img src="images/icons/logo-htmlacademy.svg" width="93" height="27" alt="Логотип HTML Academy"></a>
-        <p>Сделано в <a href="https://htmlacademy.ru/">.html academy</a> &copy; 2021</p>
+        <a class="copyright-link-image" href="https://htmlacademy.ru/"><img src="images/icons/logo-htmlacademy.svg" width="93" height="27" alt="Логотип HTML Academy"></a>
+        <p class="copyright-text">Сделано в <a class="copyright-link-text" href="https://htmlacademy.ru/">.html academy</a> &copy; 2021</p>
       </div>
     </footer>
   </body>
