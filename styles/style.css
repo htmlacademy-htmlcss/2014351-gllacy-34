@@ -1,0 +1,377 @@
+@font-face {
+    font-family: "Inter";
+    src: url("../fonts/inter-400.woff2") format("woff2");
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Inter";
+    src: url("../fonts/inter-700.woff2") format("woff2");
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Inter";
+    src: url("../fonts/inter-900.woff2") format("woff2");
+    font-style: normal;
+    font-weight: 900;
+    font-display: swap;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    object-fit: cover;
+    object-position: center;
+}
+
+body {
+    font-family: "Inter", "Geneva", sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 400;
+    color: #2D3440;
+
+    background-color: #FEAFC3;
+}
+
+.visually-hidden {
+    position: absolute;
+  
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+  
+    white-space: nowrap;
+  
+    border: 0;
+  
+    clip: rect(0 0 0 0);
+    clip-path: inset(100%);
+  }
+
+.list-reset {
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+.navigation-link {
+    text-decoration: none;
+
+    line-height: 20px;
+    color: inherit;
+}
+
+.user-navigation-link {
+    text-decoration: none;
+
+    line-height: 20px;
+    color: inherit;
+}
+
+.phone-link {
+    text-decoration: none;
+
+    font-weight: 700;
+    line-height: 20px;
+    color: inherit;
+}
+
+.user-navigation-login {
+    font-size: 14px;
+}
+
+.user-navigation-basket {
+    font-size: 14px;
+}
+
+.slider-item h3 {
+    font-size: 36px;
+    line-height: 46px;
+    font-weight: 900;
+}
+
+.slider-item p {
+    font-size: 18px;
+    line-height: 24px;
+}
+
+
+.button {
+    display: block;
+    width: 152px;
+    padding: 12px;
+    font-family: inherit;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 700;
+    color: #2D3440;
+    text-decoration: none;
+
+    text-align: center;
+    border: 2px solid transparent;
+    border-radius: 26px;
+    outline: 4px solid rgba(252, 252, 252, 0.4);
+    box-shadow: 0px 4px 12px rgba(45, 52, 64, 0.1);
+
+    cursor: pointer;
+}
+
+.main-button {
+    background-color: #FCFCFC;
+    width: 176px;
+}
+
+.form-button {
+    color: #fff;
+    background-color: #FF2F64; 
+    outline: 4px solid rgba(255, 47, 100, 0.3);
+}
+
+.main-button-slider {
+    width: 139px;
+}
+
+.form-button-address {
+    width: 250px;
+}
+
+.subtitle {
+    font-size: 32px;
+    line-height: 46px;
+    font-weight: 900;
+}
+
+.promotion-item {
+    background-color: #FF7799;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.promotion-item-raspberry {
+    background-image: url("../images/backgrounds/banner1.png"); 
+}
+
+.promotion-item-marshmallow {
+    background-image: url("../images/backgrounds/banner2.png");
+}
+
+.promotion-item h4 {
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 700;
+}
+
+.catalog-item {
+    background-color: #fff;
+}
+
+.catalog-title,
+.catalog-price {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+}
+
+.catalog-descript {
+    color: #565C66;
+}
+
+.catalog-basket {
+    background-color: #FF2F64;
+}
+
+.advantages {
+    background-image: url("../images/backgrounds/pattern2.jpg");
+    background-repeat: no-repeat;
+}
+
+.advantages-wrapper {
+    background-color: #fff;
+}
+
+.blog-promo {
+    background-color: #fff;
+    background-image: url("../images/backgrounds/news-background.jpg");
+    background-repeat: no-repeat;
+}
+
+.blog-promo-text {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+}
+
+.blog-promo-link {
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 700;
+    color: #2D3440;
+    text-decoration: none;
+}
+
+.subscribe {  
+    background-image: url("../images/backgrounds/subscribe-background.png");
+    background-repeat: no-repeat;
+}
+
+.subscribe-wrapper {
+    background-color: #fff;
+}
+
+.form-input {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #B9B9B9;
+}
+
+.delivery {
+    background-image: url("../images/backgrounds/delivery-background.jpg");
+    background-repeat: no-repeat;
+}
+
+.delivery-form-wrapper {
+    background-color: #fff;
+}
+
+.delivery-form-label {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 700;
+}
+
+.contacts {
+    background-image: url("../images/backgrounds/contacts-background.jpg");
+    background-repeat: no-repeat;
+}
+
+.contacts-wrapper {
+    background-color: #fff;
+}
+
+.contacts-subtitle {
+   font-weight: 400; 
+}
+
+.contacts-address {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+    font-style: normal;
+    text-decoration: none;
+    color: #2D3440;
+}
+
+.contacts-info {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+    font-style: normal;
+    text-decoration: none;
+    color: #2D3440;
+}
+
+.contacts-schedule {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px; 
+}
+
+.footer-navigation-link {
+    font-size: 14px;
+    line-height: 20px;
+
+    text-decoration: none;
+    color: #2D3440;
+}
+
+.footer-navigation-heart {
+    font-weight: 700;
+}
+
+.copyright-text {     
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 400;
+}
+
+.copyright-link-text {
+    color: #2D3440;
+}
+
+.breadcrumbs-link {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #2D3440;
+}
+
+.filter-subtitle {
+    font-size: 14px;
+    line-height: 20px;
+    color: #2D3440;
+}
+
+.filters-option {
+    font-size: 14px;
+    line-height: 20px;
+    color: #2D3440;
+}
+
+.catalog-filters-item select {
+    font-size: 14px;
+    line-height: 20px;
+    color: #2D3440;
+
+    background-color: rgba(252, 252, 252, 0.3);;
+}
+
+.catalog-price-input {
+    font-size: 14px;
+    line-height: 20px;
+    color: #2D3440;
+}
+
+.catalog-filters-item label {
+    font-size: 14px;
+    line-height: 20px;
+    color: #2D3440;
+}
+
+.catalog-filters-button {
+    font-size: 14px;
+    background-color: rgba(252, 252, 252, 0.3);;
+}
+
+.catalog-filters-item p {
+    font-size: 14px;
+    background-color: rgba(252, 252, 252, 0.3);;
+}
+
+.pagination-link {
+   line-height: 20px;
+   text-decoration: none;
+   color: #2D3440; 
+}
+
+.pagination-link-active {
+    background-color: #FCFCFC;
+}
