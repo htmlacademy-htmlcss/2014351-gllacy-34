@@ -43,6 +43,7 @@ html {
 img {
     object-fit: cover;
     object-position: center;
+    max-width: 100%;
 }
 
 body {
@@ -56,21 +57,18 @@ body {
 
     display: flex;
     flex-direction: column;
+
+    max-width: 1200px;
     min-height: 100%;
 
-    margin: 0;
-    padding-top: 24px;
+    margin: 0 auto;
+    padding: 0 15px;
 }
 
-.main-container {
+.main {
     flex-grow: 1;
 }
 
-.container {
-    max-width: 1170px;
-    width: 100%;
-    margin: 0 auto;
-}
 
 .visually-hidden {
     position: absolute;
@@ -98,36 +96,31 @@ body {
 
 .navigation {
     display: flex;
-    justify-content: space-between;
-    margin-bottom: 32px;
-}
-
-.navigation-wrapper {
-    width: 553px;
-    display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
+
+    padding: 24px 0 32px;
 }
 
 .navigation-list {
-    width: 400px;
     display: flex;
-    justify-content: space-around; 
+    flex-wrap: wrap;
 }
 
-.user-navigation-wrapper {
-    width: 431px;
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.navigation-logo {
+    min-width: 137px;
 }
+
+.navigation-logo img {
+    display: block;
+}
+
+.navigation-item {
+    margin-left: 32px;
+}
+
 .user-navigation-list {
-    display: flex;
-    justify-content: space-between;
-    flex-grow: 1;
-
-    margin-left: 16px;
+    display: flex;   
 }
 
 .navigation-link {
@@ -140,8 +133,11 @@ body {
 .user-navigation-link {
     text-decoration: none;
 
+    font-size: 14px;
     line-height: 20px;
     color: inherit;
+
+    margin-left: 16px;
 }
 
 .phone-link {
@@ -150,14 +146,8 @@ body {
     font-weight: 700;
     line-height: 20px;
     color: inherit;
-}
 
-.user-navigation-login {
-    font-size: 14px;
-}
-
-.user-navigation-basket {
-    font-size: 14px;
+    margin-left: auto;
 }
 
 .slider {
@@ -165,21 +155,24 @@ body {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-
-    margin-bottom: 80px;
 }
 
 .slider-list {
-    width: 470px;
     margin-left: 70px;
 }
 
 .slider-item {
     display: none;
+
+    width: 470px;
 }
 
 .slider-item-active {
     display: block;
+}
+
+.slider-buttons-wrapper {
+    position: relative;
 }
 
 .slider-thumbnails {
@@ -225,10 +218,11 @@ body {
 }
 
 .social-list {
-    width: 104px;
-
     display: flex;
-    justify-content: space-between;
+}
+
+.social-item {
+    margin-left: 16px;
 }
 
 
@@ -284,7 +278,7 @@ body {
 }
 
 .promotion {
-    margin-bottom: 80px;
+    padding: 80px 0 40px;
 }
 
 .promotion .subtitle {
@@ -293,18 +287,22 @@ body {
     margin: 0 auto 55px;
 }
 
+/* Заменить на grid */
 .promotion-list {
     display: flex;
     justify-content: space-between;
 }
 
+/* Убрать ширину при grid */
 .promotion-item {
     width: 570px;
+
     padding: 36px;
+    padding-right: 206px;
 
     background-color: #FF7799;
     background-repeat: no-repeat;
-    background-position: right;
+    background-position: right bottom;
 
     border-radius: 16px;
 }
@@ -326,7 +324,6 @@ body {
 }
 
 .promotion-item p {
-    width: 328px;
     margin-bottom: 24px;
 }
 
@@ -336,46 +333,49 @@ body {
 }
 
 .catalog-popular {
-    margin-bottom: 40px;
+    padding: 40px 0;
 }
 
+/* заменит ь на grid  */
 .catalog-list {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
+/* убрать ширину при grid  */
 .catalog-item {
     padding-top: 51px;
     margin-bottom: 40px;
 
     width: 270px;
-    height: 332px;
+   
     position: relative;
 }
 
 .catalog-item-wrapper {
     background-color: #fff;
     
-    padding: 133px 40px 24px;
+    padding: 0 40px 24px;
 
     border-radius: 8px;
+
+    display: flex;
+    flex-direction: column;
 }
 
 .catalog-item-img {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    margin-left: -84px;
-
-    display: block;
+    margin: -51px auto 16px;
 
     width: 168px;  
+
+    order: -1;
 }
 
 .catalog-item-img img {
     width: 100%;
-    height: auto;
+    height: 100%;
+    display: block;
 
     border-radius: 50%;
 }
@@ -390,6 +390,7 @@ body {
 .catalog-item-title {
     text-align: center;
 
+    margin: 0;
     margin-bottom: 8px;
 }
 
@@ -397,15 +398,26 @@ body {
     color: #565C66;
     text-align: center;
 
+    margin: 0;
     margin-bottom: 16px;
 }
 
+.catalog-basket-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
 .catalog-item-basket {
+    display: block;
+
     background-color: #FF2F64;
 
     width: 32px;
     height: 32px;
+
+    border-radius: 50%;
 }
+
 
 .advantages {
     background-image: url("../images/backgrounds/pattern2.jpg");
@@ -417,26 +429,29 @@ body {
     border-radius: 16px;
 }
 
+
+/* заменить нижний паддинг на 66px  */
 .advantages-wrapper {
     background-color: #fff;
-    width: 1122px;
 
     border-radius: 16px;
 
-    padding: 56px 40px 12px;
-    
+    padding: 56px 40px 12px; 
 }
 
 .advantages-wrapper .subtitle {
+    margin: 0;
     margin-bottom: 56px;
 }
 
+/* заменить на грид  */
 .advantages-list {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
+/* убрать ширину и нижний паддинг  */
 .advantages-item {
     width: 505px;
 
@@ -444,13 +459,15 @@ body {
     padding-bottom: 40px;
 }
 
+/* заменить на грид  */
 .blog-subscribe {
     display: flex;
     justify-content: space-between;
 
-    margin-bottom: 80px;
+    padding-bottom: 80px;
 }
 
+/* убрать ширину при гридах  */
 .blog-promo {
     background-color: #fff;
     background-image: url("../images/backgrounds/news-background.jpg");
@@ -468,6 +485,7 @@ body {
     line-height: 20px;
     font-weight: 400;
 
+    margin: 0;
     margin-bottom: 12px;
 }
 
@@ -479,6 +497,7 @@ body {
     text-decoration: none;
 }
 
+/* убрать ширину при гридах  */
 .subscribe {  
     background-image: url("../images/backgrounds/subscribe-background.png");
     background-repeat: no-repeat;
@@ -493,17 +512,17 @@ body {
 .subscribe-wrapper {
     background-color: #fff;
 
-    width: 558px;
-
     padding: 26px;
 
     border-radius: 16px;
 }
 
 .subscribe-wrapper p {
+    margin: 0;
     margin-bottom: 42px;
 }
 
+/* заменить на грид  */
 .subscribe-form {
     display: flex;
     justify-content: space-between;
@@ -617,7 +636,7 @@ body {
     margin-bottom: 32px;
 }
 
-.main-footer-container {
+.main-footer{
     display: flex;
     justify-content: space-between;
 
@@ -641,8 +660,15 @@ body {
 }
 
 .copyright-link-image {
-    display: block;
+    display: inline-block;
     margin-bottom: 14px;
+}
+
+.copyright-link-image img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
 }
 
 .copyright-text {     
@@ -659,7 +685,6 @@ body {
     text-align: start;
 
     margin: 0;
-    margin-bottom: 40px;
 }
 
 .breadcrumbs-list {
@@ -678,13 +703,11 @@ body {
 }
 
 .catalog-filters {
-    width: 823px;
-
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 
-    margin-bottom: 44px;
+    padding: 40px 0 44px;
 }
 
 .filter-subtitle {
