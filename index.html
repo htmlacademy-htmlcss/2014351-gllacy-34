@@ -23,7 +23,7 @@
         <a class="phone-link" href="tel:+78005558628">+7 800 555-86-28</a>
         <ul class="user-navigation-list list-reset">
           <li class="user-navigation-item">
-            <a class="user-navigation-link user-navigation-search" href="#"><span class="visually-hidden">Поиск</span></a>
+            <a class="user-navigation-link user-navigation-search" href="#">Поиск<span class="visually-hidden">Поиск</span></a>
           </li>
           <li class="user-navigation-item">
             <a class="user-navigation-link user-navigation-login" href="#">Вход</a>
@@ -34,13 +34,13 @@
         </ul>
       </nav>
     </header>
-    <main class="main-index">
+    <main class="main">
       <h1 class="visually-hidden">Магазин мороженого Глейси</h1>
       <section class="slider">
         <h2 class="visually-hidden">Слайдер</h2>
         <ol class="slider-list list-reset">
           <li class="slider-item slider-item-active">
-            <h3>Нежный пломбир с клубничным джемом</h3>
+            <h3>Нежный пломбир <br> с клубничным джемом</h3>
             <p>Натуральное мороженое из свежих сливок и молока с вкуснейшим клубничным джемом – это идеальный десерт для всей семьи. </p>
             <a  href="#" class="button main-button main-button-slider">Заказать</a> 
           </li>
@@ -55,11 +55,18 @@
             <a  href="#" class="button main-button main-button-slider">Заказать</a>
           </li>
         </ol>
-        <ol class="slider-thumbnails list-reset">
-          <li class="slider-thumbnails-item slider-thumbnails-item-active"><img src="images/content/icecream1.png" width="306" height="507" alt="Рожок пломбира с клубничным джемом"></li>
-          <li class="slider-thumbnails-item"><img src="images/content/icecream2.png" width="306" height="507" alt="Рожок мороженого со вкусом банана"></li>
-          <li class="slider-thumbnails-item"><img src="images/content/icecream3.png" width="306" height="507" alt="Рожок карамельного пломбира  с маршмеллоу"></li>
-        </ol>
+        <div class="slider-buttons-wrapper">
+          <ol class="slider-thumbnails list-reset">
+            <li class="slider-thumbnails-item slider-thumbnails-item-active"><img src="images/content/icecream1.png" width="306" height="507" alt="Рожок пломбира с клубничным джемом"></li>
+            <li class="slider-thumbnails-item"><img src="images/content/icecream2.png" width="306" height="507" alt="Рожок мороженого со вкусом банана"></li>
+            <li class="slider-thumbnails-item"><img src="images/content/icecream3.png" width="306" height="507" alt="Рожок карамельного пломбира  с маршмеллоу"></li>
+          </ol>
+          <div class="slider-buttons">
+            <button type="button" class="slider-button slider-button-back">Назад</button>
+            <button type="button" class="slider-button slider-button-forward">Вперед</button>
+          </div>
+        </div>
+        
         <div class="slider-bullet">
           <button class="slider-bullet-item slider-bullet-item-active" type="button">
             <span class="visually-hidden">Первый слайд</span>
@@ -91,11 +98,8 @@
             </a>
           </li>
         </ul>
-        <div class="slider-buttons">
-          <button type="button" class="slider-button slider-button-back">Назад</button>
-          <button type="button" class="slider-button slider-button-forward">Вперед</button>
-        </div>
       </section>
+
       <section class="promotion">
         <h2 class="visually-hidden">Акции и подарки</h2>
         <p class="subtitle">Заказывайте мороженое и получайте подарки!</p>
@@ -112,57 +116,62 @@
           </li>
         </ul>
       </section>
+
       <section class="catalog catalog-popular">
         <h2 class="visually-hidden">Популярные вкусы</h2>
         <p class="subtitle">Попробуйте самые популярные вкусы нашего мороженого</p>
         <ol class="catalog-list list-reset">
           <li class="catalog-item">
             <div class="catalog-item-wrapper">
-              <h4 class="catalog-title">Малинка</h4>
-              <div class="catalog-img">
+              <h4 class="catalog-item-title">Малинка</h4>
+              <div class="catalog-item-img">
                 <img src="images/content/raspberry.jpg" width="168" height="168" alt="Шарик мороженого Малинка">
               </div>
-              <p class="catalog-descript">Сливочное мороженое с малиновым джемом</p>
-              <span class="catalog-price">310 ₽/кг</span>
-              <button type="button" class="catalog-basket"><span class="visually-hidden">Добавить в корзину</span></button>
+              <p class="catalog-item-descript">Сливочное мороженое с малиновым джемом</p>
+              <div class="catalog-basket-wrapper">
+                <span class="catalog-item-price">310 ₽/кг</span>
+                <a class="catalog-item-basket" href="#"><span class="visually-hidden">Добавить в корзину</span></a>
+              </div>
             </div>
-           
           </li>
           <li class="catalog-item">
             <div class="catalog-item-wrapper">
-              <h4 class="catalog-title">Фисташка</h4>
-              <div class="catalog-img">
+              <h4 class="catalog-item-title">Фисташка</h4>
+              <div class="catalog-item-img">
                 <img src="images/content/phistaccio.jpg" width="168" height="168" alt="Шарик мороженого Фисташка">
               </div>
-              <p class="catalog-descript">Фисташковый пломбир с кусочками шоколада</p>
-              <span class="catalog-price">340 ₽/кг</span>
-              <button type="button" class="catalog-basket"><span class="visually-hidden">Добавить в корзину</span></button>
-            </div>
-           
+              <p class="catalog-item-descript">Фисташковый пломбир с кусочками шоколада</p>
+              <div class="catalog-basket-wrapper">
+                <span class="catalog-item-price">340 ₽/кг</span>
+                <a class="catalog-item-basket" href="#"><span class="visually-hidden">Добавить в корзину</span></a>
+              </div>
+            </div>   
           </li>
           <li class="catalog-item">
             <div class="catalog-item-wrapper">
-              <h4 class="catalog-title">Черника</h4>
-              <div class="catalog-img">
+              <h4 class="catalog-item-title">Черника</h4>
+              <div class="catalog-item-img">
                 <img src="images/content/blueberry.jpg" width="168" height="168" alt="Шарик мороженого Черника">
               </div>
-              <p class="catalog-descript">Крем-брюле с черничным джемом</p>
-              <span class="catalog-price">330 ₽/кг</span>
-              <button type="button" class="catalog-basket"><span class="visually-hidden">Добавить в корзину</span></button>
-            </div>
-           
+              <p class="catalog-item-descript">Крем-брюле с черничным джемом</p>
+              <div class="catalog-basket-wrapper">
+                <span class="catalog-item-price">330 ₽/кг</span>
+                <a class="catalog-item-basket" href="#"><span class="visually-hidden">Добавить в корзину</span></a>
+              </div>
+            </div>    
           </li>
           <li class="catalog-item">
             <div class="catalog-item-wrapper">
-              <h4 class="catalog-title">Бабл-гам</h4>
-              <div class="catalog-img">
+              <h4 class="catalog-item-title">Бабл-гам</h4>
+              <div class="catalog-item-img">
                 <img src="images/content/bubble-gum.jpg" width="168" height="168" alt="Шарик мороженого Бабл-гам">
               </div>
-              <p class="catalog-descript">Ванильный пломбир со сладкой посыпкой</p>
-              <span class="catalog-price">320 ₽/кг</span>
-              <button type="button" class="catalog-basket"><span class="visually-hidden">Добавить в корзину</span></button>
+              <p class="catalog-item-descript">Ванильный пломбир со сладкой посыпкой</p>
+              <div class="catalog-basket-wrapper">
+                <span class="catalog-item-price">320 ₽/кг</span>
+                <a class="catalog-item-basket" href="#"><span class="visually-hidden">Добавить в корзину</span></a>
+              </div>
             </div>
-          
           </li>
         </ol>
       </section>
@@ -187,8 +196,7 @@
               Доставка нашего мороженого осуществляется в специальном термопаке, который не даёт мороженому растаять и позволяет сохранить превосходный вкус.
             </li>
           </ul>
-        </div>
-       
+        </div> 
       </section>
       <section class="blog-subscribe">
         <h2 class="visually-hidden">Блог</h2>
@@ -203,11 +211,10 @@
               в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
             <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
               <label class="visually-hidden" for="subscribe-email">Ваша почта</label>
-              <input class="form-input" type="email" name="subscribe-email" id="subscribe-email" placeholder="email@example.com">
+              <input class="form-input subscribe-form-input" type="email" name="subscribe-email" id="subscribe-email" placeholder="email@example.com">
               <button class="button form-button" type="submit">Отправить</button>
             </form>
-          </div>
-         
+          </div> 
         </div>
       </section>  
       <section class="delivery">
@@ -240,14 +247,15 @@
         <h2 class="visually-hidden">Контакты</h2>
         <div class="contacts-wrapper">
           <h4 class="contacts-subtitle">Адрес главного офиса и офлайн-магазина:</h4>
-          <address class="contacts-address">наб. реки Карповки, 5 лит П, Санкт-Петербург</address>
-          <span class="contacts-subtitle">Для заказов по телефону:</span>
-          <a class="contacts-info" href="tel:+78128121212">+7 (812) 812-12-12</a>
+          <address class="contacts-address">наб. реки Карповки, <br> 5 лит П, Санкт-Петербург</address>
+          <span class="contacts-subtitle">Для заказов по телефону: <br></span>
+          <a class="contacts-info" href="tel:+78128121212">+7 (812) 812-12-12 <br></a>
           <span class="contacts-schedule">(с 10 до 20 ежедневно)</span>
           <a class="button form-button form-button-address" href="#">Форма обратной связи</a>
         </div>
       </section>
     </main>
+
     <footer class="main-footer">
       <ul class="social-list list-reset">
         <li class="social-item">
