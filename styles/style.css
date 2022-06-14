@@ -98,6 +98,8 @@ body {
 .navigation-list {
     display: flex;
     flex-wrap: wrap;
+
+    max-width: 553px;
 }
 
 .navigation-logo {
@@ -108,12 +110,11 @@ body {
     display: block;
 }
 
-.navigation-item {
-    margin-left: 32px;
-}
-
 .user-navigation-list {
-    display: flex;   
+    display: flex; 
+    flex-wrap: wrap;  
+
+    min-width: 230px;
 }
 
 .navigation-link {
@@ -121,6 +122,8 @@ body {
 
     line-height: 20px;
     color: inherit;
+
+    padding: 8px 16px;
 }
 
 .user-navigation-link {
@@ -130,7 +133,8 @@ body {
     line-height: 20px;
     color: inherit;
 
-    margin-left: 16px;
+    padding: 6px 16px;
+    margin-left: 16px;  
 }
 
 .phone-link {
@@ -141,6 +145,17 @@ body {
     color: inherit;
 
     margin-left: auto;
+    padding: 18px 0;
+    min-width: 148px;
+
+}
+
+.user-navigation-login {
+    padding-left: 38px;
+}
+
+.user-navigation-basket {
+    padding-left: 38px;
 }
 
 .slider {
@@ -214,10 +229,16 @@ body {
 
 .social-list {
     display: flex;
+    flex-wrap: wrap;
+    max-width: 200px;
 }
 
 .social-item {
     margin-left: 16px;
+}
+
+.social-link img {
+    display: block;
 }
 
 
@@ -251,7 +272,7 @@ body {
 }
 
 .form-button {
-    color: #fff;
+    color: #FCFCFC;
     background-color: #FF2F64; 
     outline: 4px solid rgba(255, 47, 100, 0.3);
 }
@@ -350,13 +371,14 @@ body {
     width: 270px;
    
     position: relative;
+
+    display: flex;
 }
 
 .catalog-item-wrapper {
-    background-color: #fff;
+    background-color: #FCFCFC;
     
     padding: 0 40px 24px;
-
     border-radius: 8px;
 
     display: flex;
@@ -402,6 +424,8 @@ body {
 }
 
 .catalog-basket-wrapper {
+    margin-top: auto;
+
     display: flex;
     justify-content: space-between;
 }
@@ -419,8 +443,8 @@ body {
 
 
 .advantages {
-    background-image: url("../images/backgrounds/pattern2.jpg");
-    background-repeat: no-repeat;
+    background-image: url("../images/backgrounds/adv-pattern.jpg");
+    background-repeat: repeat;
 
     padding: 24px;
     margin-bottom: 80px;
@@ -431,11 +455,11 @@ body {
 
 /* заменить нижний паддинг на 66px  */
 .advantages-wrapper {
-    background-color: #fff;
+    background-color: #FCFCFC;
 
     border-radius: 16px;
 
-    padding: 56px 40px 12px; 
+    padding: 56px 40px 16px; 
 }
 
 .advantages-wrapper .subtitle {
@@ -467,7 +491,7 @@ body {
 
 /* убрать ширину при гридах  */
 .blog-promo {
-    background-color: #fff;
+    background-color: #FCFCFC;
     background-image: url("../images/backgrounds/news-background.jpg");
     background-repeat: no-repeat;
 
@@ -508,7 +532,7 @@ body {
 }
 
 .subscribe-wrapper {
-    background-color: #fff;
+    background-color: #FCFCFC;
 
     padding: 26px;
 
@@ -569,9 +593,10 @@ body {
 }
 
 .delivery-form-wrapper {
-    background-color: #fff;
+    background-color: #FCFCFC;
 
     width: 500px;
+    border-radius: 16px;
 
     padding: 40px;
 }
@@ -596,7 +621,7 @@ body {
 }
 
 .contacts-wrapper {
-    background-color: #fff;
+    background-color: #FCFCFC;
 
     width: 343px;
     padding: 40px;
@@ -652,6 +677,11 @@ body {
     padding: 48px 0;
 }
 
+.footer-social-list .social-item {
+    margin-right: 16px;
+    margin-left: 0;
+}
+
 .footer-navigation-list {
     width: 356px;
 }
@@ -680,7 +710,8 @@ body {
     height: 100%;
 }
 
-.copyright-text {     
+.copyright-text { 
+    margin: 0;    
     font-size: 12px;
     line-height: 16px;
     font-weight: 400;
@@ -783,8 +814,12 @@ body {
    line-height: 20px;
    text-decoration: none;
    color: #2D3440; 
+
+   padding: 2px 7px;
 }
 
 .pagination-link-active {
     background-color: #FCFCFC;
+
+    border-radius: 50%;
 }
