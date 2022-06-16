@@ -113,8 +113,6 @@ body {
 .user-navigation-list {
     display: flex; 
     flex-wrap: wrap;  
-
-    min-width: 230px;
 }
 
 .navigation-link {
@@ -135,6 +133,7 @@ body {
 
     padding: 6px 16px;
     margin-left: 16px;  
+    padding-left: 38px;
 }
 
 .phone-link {
@@ -146,16 +145,10 @@ body {
 
     margin-left: auto;
     padding: 18px 0;
-    min-width: 148px;
-
 }
 
-.user-navigation-login {
-    padding-left: 38px;
-}
-
-.user-navigation-basket {
-    padding-left: 38px;
+.user-navigation-search {
+    padding-left: 16px;
 }
 
 .slider {
@@ -188,6 +181,7 @@ body {
 
     display: flex;
     align-items: center;
+    justify-content: space-around;
 }
 
 .slider-thumbnails-item {
