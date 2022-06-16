@@ -64,7 +64,7 @@
           <fieldset class="catalog-filters-item catalog-filters-range">
             <legend class="filter-subtitle">Цена:</legend>
             
-              <label for="filter-price-from">
+              <!-- <label for="filter-price-from">
                 <span class="visually-hidden">От</span>
               </label>
               <input class="filter-price-input" type="number" name="price-from" value="100" id="filter-price-from">
@@ -78,27 +78,27 @@
             <p>
               <input type="range" min="0" max="1000" value="100" step="10">
               <input type="range" min="0" max="1000" value="500" step="10">
-            </p>
+            </p> -->
           </fieldset>
 
           <fieldset class="catalog-filters-item catalog-filters-radio">
             <legend class="filter-subtitle">Жирность:</legend>
-            <p>
-              <input type="radio" name="fatness" id="fatness1" value="0">
-              <label for="fatness1">0%</label>  
-            </p>
-            <p>
-              <input type="radio" name="fatness" id="fatness2" value="10">
-              <label for="fatness2">до 10%</label>
-            </p>
-            <p>
-              <input type="radio" name="fatness" id="fatness3" value="30">
-              <label for="fatness3">до 30%</label>
-            </p>
-            <p>
-              <input type="radio" name="fatness" id="fatness4" value="30-100">
-              <label for="fatness4">выше 30%</label>
-            </p>
+              <p>
+                <input type="radio" name="fatness" id="fatness1" value="0">
+                <label for="fatness1">0%</label>  
+              </p>
+              <p>
+                <input type="radio" name="fatness" id="fatness2" value="10">
+                <label for="fatness2">до 10%</label>
+              </p>
+              <p>
+                <input type="radio" name="fatness" id="fatness3" value="30">
+                <label for="fatness3">до 30%</label>
+              </p>
+              <p>
+                <input type="radio" name="fatness" id="fatness4" value="30-100">
+                <label for="fatness4">выше 30%</label>
+              </p>
           </fieldset>
 
           <fieldset class="catalog-filters-item catalog-filters-checkbox">
@@ -291,7 +291,7 @@
         <div class="pagination-wrapper">
           <button class="button main-button pagination-main-button" type="button">Показать еще</button>
           <div class="pagination">
-            <button class="pagination-arrow pagination-arrow-prev" type="button" disabled>Назад</button>
+            <button class="pagination-arrow pagination-arrow-prev visually-hidden" type="button" disabled>Назад</button>
             <ol class="pagination-list list-reset"> 
               <li class="pagination-item"><a class="pagination-link" href="#">1</a></li>
               <li class="pagination-item"><a class="pagination-link" href="#">2</a></li>
@@ -299,7 +299,7 @@
               <li class="pagination-item"><a class="pagination-link" href="#">4</a></li>
               <li class="pagination-item"><a class="pagination-link" href="#">5</a></li>
             </ol>
-            <button class="pagination-arrow pagination-arrow-next" type="button">Вперед</button>
+            <button class="pagination-arrow pagination-arrow-next visually-hidden" type="button">Вперед</button>
           </div>
         </div>
       </section>
