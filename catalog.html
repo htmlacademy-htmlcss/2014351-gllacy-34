@@ -83,6 +83,7 @@
 
           <fieldset class="catalog-filters-item catalog-filters-radio">
             <legend class="filter-subtitle">Жирность:</legend>
+            <div class="catalog-filters-wrapper">
               <p>
                 <input type="radio" name="fatness" id="fatness1" value="0">
                 <label for="fatness1">0%</label>  
@@ -99,30 +100,34 @@
                 <input type="radio" name="fatness" id="fatness4" value="30-100">
                 <label for="fatness4">выше 30%</label>
               </p>
+            </div>
+           
           </fieldset>
 
           <fieldset class="catalog-filters-item catalog-filters-checkbox">
             <legend class="filter-subtitle">Наполнители:</legend>
-            <p>
-              <input type="checkbox" name="ingredient-choсolate" id="ingredient-choсolate">
-              <label for="ingredient-choсolate">шоколадные</label>
-            </p>
-            <p>
-              <input type="checkbox" name="ingredient-sprinkles" id="ingredient-sprinkles">
-              <label for="ingredient-sprinkles">сахарные посыпки</label>
-            </p>
-            <p>
-              <input type="checkbox" name="ingredient-fruit" id="ingredient-fruit">
-              <label for="ingredient-fruit">фрукты</label>
-            </p>
-            <p>
-              <input type="checkbox" name="ingredient-syrup" id="ingredient-syrup">
-              <label for="ingredient-syrup">сиропы</label>
-            </p>
-            <p>
-              <input type="checkbox" name="ingredient-jam" id="ingredient-jam">
-              <label for="ingredient-jam">джемы</label>
-            </p>
+            <div class="catalog-filters-wrapper">
+              <p>
+                <input type="checkbox" name="ingredient-choсolate" id="ingredient-choсolate">
+                <label for="ingredient-choсolate">шоколадные</label>
+              </p>
+              <p>
+                <input type="checkbox" name="ingredient-sprinkles" id="ingredient-sprinkles">
+                <label for="ingredient-sprinkles">сахарные посыпки</label>
+              </p>
+              <p>
+                <input type="checkbox" name="ingredient-fruit" id="ingredient-fruit">
+                <label for="ingredient-fruit">фрукты</label>
+              </p>
+              <p>
+                <input type="checkbox" name="ingredient-syrup" id="ingredient-syrup">
+                <label for="ingredient-syrup">сиропы</label>
+              </p>
+              <p>
+                <input type="checkbox" name="ingredient-jam" id="ingredient-jam">
+                <label for="ingredient-jam">джемы</label>
+              </p>
+            </div>
           </fieldset>
 
           <button class="button catalog-filters-button" type="submit">Применить</button>
@@ -291,7 +296,7 @@
         <div class="pagination-wrapper">
           <button class="button main-button pagination-main-button" type="button">Показать еще</button>
           <div class="pagination">
-            <button class="pagination-arrow pagination-arrow-prev visually-hidden" type="button" disabled>Назад</button>
+            <button class="pagination-arrow pagination-arrow-prev" type="button" disabled>Назад</button>
             <ol class="pagination-list list-reset"> 
               <li class="pagination-item"><a class="pagination-link" href="#">1</a></li>
               <li class="pagination-item"><a class="pagination-link" href="#">2</a></li>
@@ -299,7 +304,7 @@
               <li class="pagination-item"><a class="pagination-link" href="#">4</a></li>
               <li class="pagination-item"><a class="pagination-link" href="#">5</a></li>
             </ol>
-            <button class="pagination-arrow pagination-arrow-next visually-hidden" type="button">Вперед</button>
+            <button class="pagination-arrow pagination-arrow-next" type="button">Вперед</button>
           </div>
         </div>
       </section>
