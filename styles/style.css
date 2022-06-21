@@ -113,8 +113,6 @@ body {
 .user-navigation-list {
     display: flex; 
     flex-wrap: wrap;  
-
-    min-width: 230px;
 }
 
 .navigation-link {
@@ -133,7 +131,7 @@ body {
     line-height: 20px;
     color: inherit;
 
-    padding: 6px 16px;
+    padding: 6px 16px 6px 38px;
     margin-left: 16px;  
 }
 
@@ -146,37 +144,28 @@ body {
 
     margin-left: auto;
     padding: 18px 0;
-    min-width: 148px;
-
 }
 
-.user-navigation-login {
-    padding-left: 38px;
-}
-
-.user-navigation-basket {
-    padding-left: 38px;
+.user-navigation-search {
+    padding: 0;
+    width: 32px;
+    height: 32px;
 }
 
 .slider {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.slider-list {
-    margin-left: 70px;
+    display: grid;
+    grid-template-columns: 540px auto;
+    padding-top: 24px;
 }
 
 .slider-item {
     display: none;
-
-    width: 470px;
+    width: 540px;
+    padding: 115px 30px 115px 70px;
 }
 
 .slider-item-active {
-    display: block;
+    display: block; 
 }
 
 .slider-buttons-wrapper {
@@ -184,25 +173,35 @@ body {
 }
 
 .slider-thumbnails {
-    width: 630px;
-
-    display: flex;
+    display: grid;
     align-items: center;
+  
+    gap: 40px;
+    grid-template-columns: 350px 100px 100px;
 }
 
 .slider-thumbnails-item {
-    width: 66px;
-    height: 150px;   
+    position: relative;
+
+    width: 100px;
+    height: 150px;
+  
+    opacity: 0.4;  
 }
 
 .slider-thumbnails-item img {
-  width: 100%;
-  height: 100%;
+    display: block;
+    width: auto;
+    height: 100%;
+    margin: 0 auto;
 }
 
 .slider-thumbnails-item-active {
     width: 306px;
-    height: auto;
+    height: 507px;
+    padding: 0 20px;
+
+    opacity: 1;
 }
 
 .slider-item h3 {
@@ -228,13 +227,10 @@ body {
 }
 
 .social-list {
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 200px;
-}
-
-.social-item {
-    margin-left: 16px;
+  display: grid;  
+  gap: 16px;
+  grid-template-columns: repeat(3, 24px);
+  margin-left: auto;
 }
 
 .social-link img {
@@ -246,7 +242,7 @@ body {
     display: block;
 
     width: 152px;
-    padding: 12px;
+    padding: 10px;
 
     font-family: inherit;
     font-size: 16px;
@@ -305,16 +301,13 @@ body {
     margin: 0 auto 55px;
 }
 
-/* Заменить на grid */
 .promotion-list {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
 }
 
-/* Убрать ширину при grid */
 .promotion-item {
-    width: 570px;
-
     padding: 36px;
     padding-right: 206px;
 
@@ -353,23 +346,18 @@ body {
 }
 
 .catalog-popular {
-    padding: 40px 0;
+    padding: 40px 0 80px;
 }
 
-/* заменит ь на grid  */
 .catalog-list {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 38px 30px;
 }
 
-/* убрать ширину при grid  */
 .catalog-item {
-    padding-top: 51px;
-    margin-bottom: 40px;
+    padding-top: 53px;
 
-    width: 270px;
-   
     position: relative;
 
     display: flex;
@@ -389,7 +377,7 @@ body {
     margin: -51px auto 16px;
 
     width: 168px;  
-
+    height: 168px;
     order: -1;
 }
 
@@ -452,50 +440,41 @@ body {
     border-radius: 16px;
 }
 
-
-/* заменить нижний паддинг на 66px  */
 .advantages-wrapper {
     background-color: #FCFCFC;
 
     border-radius: 16px;
 
-    padding: 56px 40px 16px; 
+    padding: 56px 40px 66px; 
 }
 
 .advantages-wrapper .subtitle {
     margin-bottom: 56px;
 }
 
-/* заменить на грид  */
 .advantages-list {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px 32px;
 }
 
-/* убрать ширину и нижний паддинг  */
 .advantages-item {
-    width: 505px;
-
     padding-left: 64px;
-    padding-bottom: 40px;
 }
 
-/* заменить на грид  */
+
 .blog-subscribe {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
 
     padding-bottom: 80px;
 }
 
-/* убрать ширину при гридах  */
 .blog-promo {
     background-color: #FCFCFC;
     background-image: url("../images/backgrounds/news-background.jpg");
     background-repeat: no-repeat;
-
-    width: 570px;
 
     padding: 32px 235px 67px 32px;
 
@@ -519,12 +498,9 @@ body {
     text-decoration: none;
 }
 
-/* убрать ширину при гридах  */
 .subscribe {  
     background-image: url("../images/backgrounds/subscribe-background.png");
     background-repeat: no-repeat;
-
-    width: 570px;
 
     padding: 6px;
 
@@ -541,28 +517,31 @@ body {
 
 .subscribe-wrapper p {
     margin: 0;
-    margin-bottom: 42px;
+    margin-bottom: 46px;
 }
 
-/* заменить на грид  */
 .subscribe-form {
-    display: flex;
-    justify-content: space-between;
-}
-
-.subscribe-form-input {
-    width: 332px;
-
-    border: 1px solid #B9B9B9;
-    border-radius: 4px;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 18px;
 }
 
 .form-input {
+    border: 1px solid #B9B9B9;
+    border-radius: 4px;
+    background-color: #ffffff;
+
+    width: 100%;
+    height: 48px;
+    padding: 5px 15px;
+
     font-size: 16px;
     line-height: 20px;
     font-weight: 400;
-    color: #B9B9B9;
+    font-family: "Inter", "Geneva", sans-serif;
+    color: #2d3440;
 }
+
 
 .delivery {
     background-image: url("../images/backgrounds/delivery-background.jpg");
@@ -601,7 +580,27 @@ body {
     padding: 40px;
 }
 
-.delivery-form-wrapper p {
+.delivery-form-wrapper > p {
+    margin: 0;
+    margin-bottom: 17px;
+}
+
+.delivery-form {
+    display: grid;
+    grid-template-columns: 117px 1fr;
+    gap: 20px 16px;
+
+    padding-top: 15px;
+}
+
+.delivery-form-group-address {
+    grid-column: 1/-1;
+}
+
+.delivery-form p {
+    display: flex;
+    flex-direction: column;
+
     margin: 0;
 }
 
@@ -609,6 +608,14 @@ body {
     font-size: 16px;
     line-height: 20px;
     font-weight: 700;
+
+    margin-bottom: 8px;
+}
+
+.delivery-form-button {
+    grid-column: 1/-1;
+
+    margin: 12px auto 0;
 }
 
 .contacts {
@@ -677,13 +684,19 @@ body {
     padding: 48px 0;
 }
 
-.footer-social-list .social-item {
-    margin-right: 16px;
+/* для отцентровки элементов в футере */
+.footer-social-list {
+    min-width: 200px;
     margin-left: 0;
 }
 
 .footer-navigation-list {
-    width: 356px;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(2, auto);
+    gap: 8px 24px;
+
+    padding-left: 24px;
 }
 
 .footer-navigation-link {
@@ -696,6 +709,10 @@ body {
 
 .footer-navigation-heart {
     font-weight: 700;
+}
+
+.copyright {
+    padding-right: 14px;
 }
 
 .copyright-link-image {
@@ -742,12 +759,37 @@ body {
 
 .catalog-filters {
     padding: 40px 0 44px;
+    
+}
+
+.catalog-filters-form {
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.catalog-filters-item {
+    border: none;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 16px;
+}
+
+.catalog-filters-range {
+    width: 196px;
+}
+   
+
+.catalog-filters-checkbox p {
+    padding: 10px 24px;
 }
 
 .filter-subtitle {
     font-size: 14px;
     line-height: 20px;
     color: #2D3440;
+
+    margin-bottom: 8px;
 }
 
 .filters-option {
@@ -761,7 +803,14 @@ body {
     line-height: 20px;
     color: #2D3440;
 
-    background-color: rgba(252, 252, 252, 0.3);;
+    background-color: rgba(252, 252, 252, 0.3);
+
+    border: none;
+    border-radius: 20px;
+
+    padding: 8px 63px 8px 16px;
+
+    appearance: none;
 }
 
 .catalog-price-input {
@@ -776,14 +825,29 @@ body {
     color: #2D3440;
 }
 
+.catalog-filters-wrapper {
+    border-radius: 20px;
+    background-color: rgba(252, 252, 252, 0.3);
+    display: flex;
+}
+
 .catalog-filters-button {
     font-size: 14px;
-    background-color: rgba(252, 252, 252, 0.3);;
+    background-color: rgba(252, 252, 252, 0.3);
+
+    align-self: center;
+    padding: 8px 0;
+    margin: 10px 0 0 16px;
+
+    outline: none;
+    border: 2px solid #FCFCFC;
 }
 
 .catalog-filters-item p {
     font-size: 14px;
-    background-color: rgba(252, 252, 252, 0.3);;
+    
+    margin: 0;
+    padding: 8px 16px;
 }
 
 .pagination-main-button {
@@ -793,7 +857,7 @@ body {
 .pagination-wrapper {
     position: relative;
 
-    padding-top: 17px;
+    padding-top: 57px;
     padding-bottom: 40px;
     margin-bottom: 40px
 }
@@ -803,7 +867,9 @@ body {
 
     position: absolute;
     right: 0;
-    top: 30px;
+    top: 67px;
+
+    padding: 0 24px;
 }
 
 .pagination-list {

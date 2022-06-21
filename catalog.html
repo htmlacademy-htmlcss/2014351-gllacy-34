@@ -64,7 +64,7 @@
           <fieldset class="catalog-filters-item catalog-filters-range">
             <legend class="filter-subtitle">Цена:</legend>
             
-              <label for="filter-price-from">
+              <!-- <label for="filter-price-from">
                 <span class="visually-hidden">От</span>
               </label>
               <input class="filter-price-input" type="number" name="price-from" value="100" id="filter-price-from">
@@ -78,51 +78,56 @@
             <p>
               <input type="range" min="0" max="1000" value="100" step="10">
               <input type="range" min="0" max="1000" value="500" step="10">
-            </p>
+            </p> -->
           </fieldset>
 
           <fieldset class="catalog-filters-item catalog-filters-radio">
             <legend class="filter-subtitle">Жирность:</legend>
-            <p>
-              <input type="radio" name="fatness" id="fatness1" value="0">
-              <label for="fatness1">0%</label>  
-            </p>
-            <p>
-              <input type="radio" name="fatness" id="fatness2" value="10">
-              <label for="fatness2">до 10%</label>
-            </p>
-            <p>
-              <input type="radio" name="fatness" id="fatness3" value="30">
-              <label for="fatness3">до 30%</label>
-            </p>
-            <p>
-              <input type="radio" name="fatness" id="fatness4" value="30-100">
-              <label for="fatness4">выше 30%</label>
-            </p>
+            <div class="catalog-filters-wrapper">
+              <p>
+                <input type="radio" name="fatness" id="fatness1" value="0">
+                <label for="fatness1">0%</label>  
+              </p>
+              <p>
+                <input type="radio" name="fatness" id="fatness2" value="10">
+                <label for="fatness2">до 10%</label>
+              </p>
+              <p>
+                <input type="radio" name="fatness" id="fatness3" value="30">
+                <label for="fatness3">до 30%</label>
+              </p>
+              <p>
+                <input type="radio" name="fatness" id="fatness4" value="30-100">
+                <label for="fatness4">выше 30%</label>
+              </p>
+            </div>
+           
           </fieldset>
 
           <fieldset class="catalog-filters-item catalog-filters-checkbox">
             <legend class="filter-subtitle">Наполнители:</legend>
-            <p>
-              <input type="checkbox" name="ingredient-choсolate" id="ingredient-choсolate">
-              <label for="ingredient-choсolate">шоколадные</label>
-            </p>
-            <p>
-              <input type="checkbox" name="ingredient-sprinkles" id="ingredient-sprinkles">
-              <label for="ingredient-sprinkles">сахарные посыпки</label>
-            </p>
-            <p>
-              <input type="checkbox" name="ingredient-fruit" id="ingredient-fruit">
-              <label for="ingredient-fruit">фрукты</label>
-            </p>
-            <p>
-              <input type="checkbox" name="ingredient-syrup" id="ingredient-syrup">
-              <label for="ingredient-syrup">сиропы</label>
-            </p>
-            <p>
-              <input type="checkbox" name="ingredient-jam" id="ingredient-jam">
-              <label for="ingredient-jam">джемы</label>
-            </p>
+            <div class="catalog-filters-wrapper">
+              <p>
+                <input type="checkbox" name="ingredient-choсolate" id="ingredient-choсolate">
+                <label for="ingredient-choсolate">шоколадные</label>
+              </p>
+              <p>
+                <input type="checkbox" name="ingredient-sprinkles" id="ingredient-sprinkles">
+                <label for="ingredient-sprinkles">сахарные посыпки</label>
+              </p>
+              <p>
+                <input type="checkbox" name="ingredient-fruit" id="ingredient-fruit">
+                <label for="ingredient-fruit">фрукты</label>
+              </p>
+              <p>
+                <input type="checkbox" name="ingredient-syrup" id="ingredient-syrup">
+                <label for="ingredient-syrup">сиропы</label>
+              </p>
+              <p>
+                <input type="checkbox" name="ingredient-jam" id="ingredient-jam">
+                <label for="ingredient-jam">джемы</label>
+              </p>
+            </div>
           </fieldset>
 
           <button class="button catalog-filters-button" type="submit">Применить</button>
