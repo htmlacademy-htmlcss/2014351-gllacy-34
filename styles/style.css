@@ -1128,11 +1128,15 @@ body {
    text-decoration: none;
    color: #2D3440; 
 
-   padding: 2px 7px;
+   min-width: 26px;
+   min-height: 26px;
+
    border: 1px solid transparent;
    border-radius: 76px;
 
-   display: block;
+   display: flex;
+   justify-content: center;
+   align-items: center;
 }
 
 .pagination-link-active {
