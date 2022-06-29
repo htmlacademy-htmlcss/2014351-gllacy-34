@@ -10,7 +10,7 @@
   <body>
     <header class="main-header">
       <nav class="navigation">
-        <a class="navigation-logo"><img src="images/icons/logo-glaccy.svg" width="137" height="56" alt="Логотип Глейси."></a>
+        <a class="navigation-logo link-style"><img src="images/icons/logo-glaccy.svg" width="137" height="56" alt="Логотип Глейси."></a>
         <ul class="navigation-list list-reset">
           <li class="navigation-item">
             <a class="navigation-link" href="catalog.html">Каталог</a>
@@ -22,7 +22,7 @@
             <a class="navigation-link" href="#">О компании</a>
           </li>
         </ul>
-        <a class="phone-link" href="tel:+78005558628">+7 800 555-86-28</a>
+        <a class="phone-link link-style" href="tel:+78005558628">+7 800 555-86-28</a>
         <ul class="user-navigation-list list-reset">
           <li class="user-navigation-item">
             <a class="user-navigation-link user-navigation-search" href="#">
@@ -273,12 +273,12 @@
             <p class="delivery-form-group delivery-form-group-info">
               <label class="delivery-form-label delivery-form-info" for="delivery-date">Дата</label>
               <span class="tooltip">
-                <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label">
+                <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-date-label">
                   <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M7.00026 2.12508C4.30774 2.12508 2.12502 4.3078 2.12502 7.00032C2.12502 9.69284 4.30774 11.8756 7.00026 11.8756C9.69278 11.8756 11.8755 9.69284 11.8755 7.00032C11.8755 4.3078 9.69278 2.12508 7.00026 2.12508ZM0.791687 7.00032C0.791687 3.57142 3.57136 0.791748 7.00026 0.791748C10.4292 0.791748 13.2088 3.57142 13.2088 7.00032C13.2088 10.4292 10.4292 13.2089 7.00026 13.2089C3.57136 13.2089 0.791687 10.4292 0.791687 7.00032ZM7.00007 6.3334C7.36826 6.3334 7.66674 6.63188 7.66674 7.00007V9.21683C7.66674 9.58502 7.36826 9.8835 7.00007 9.8835C6.63188 9.8835 6.33341 9.58502 6.33341 9.21683V7.00007C6.33341 6.63188 6.63188 6.3334 7.00007 6.3334ZM7.00007 4.11665C6.63188 4.11665 6.33341 4.41513 6.33341 4.78332C6.33341 5.1515 6.63188 5.44998 7.00007 5.44998H7.0059C7.37409 5.44998 7.67257 5.1515 7.67257 4.78332C7.67257 4.41513 7.37409 4.11665 7.0059 4.11665H7.00007Z" fill="#2D3440"/>
                   </svg>
                 </button>
-                <span class="tooltip-text" role="tooltip" id="tooltip-label">
+                <span class="tooltip-text" role="tooltip" id="tooltip-date-label">
                   Укажите желаемую дату, и мы свяжемся с вами для подтверждения брони
                 </span>
               </span>
@@ -291,12 +291,12 @@
             <p class="delivery-form-group delivery-form-group-address">
               <label class="delivery-form-label delivery-form-info" for="delivery-address">Адрес</label>
               <span class="tooltip tooltip-address">
-                <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label">
+                <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-address-label">
                   <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M7.00026 2.12508C4.30774 2.12508 2.12502 4.3078 2.12502 7.00032C2.12502 9.69284 4.30774 11.8756 7.00026 11.8756C9.69278 11.8756 11.8755 9.69284 11.8755 7.00032C11.8755 4.3078 9.69278 2.12508 7.00026 2.12508ZM0.791687 7.00032C0.791687 3.57142 3.57136 0.791748 7.00026 0.791748C10.4292 0.791748 13.2088 3.57142 13.2088 7.00032C13.2088 10.4292 10.4292 13.2089 7.00026 13.2089C3.57136 13.2089 0.791687 10.4292 0.791687 7.00032ZM7.00007 6.3334C7.36826 6.3334 7.66674 6.63188 7.66674 7.00007V9.21683C7.66674 9.58502 7.36826 9.8835 7.00007 9.8835C6.63188 9.8835 6.33341 9.58502 6.33341 9.21683V7.00007C6.33341 6.63188 6.63188 6.3334 7.00007 6.3334ZM7.00007 4.11665C6.63188 4.11665 6.33341 4.41513 6.33341 4.78332C6.33341 5.1515 6.63188 5.44998 7.00007 5.44998H7.0059C7.37409 5.44998 7.67257 5.1515 7.67257 4.78332C7.67257 4.41513 7.37409 4.11665 7.0059 4.11665H7.00007Z" fill="#2D3440"/>
                   </svg>
                 </button>
-                <span class="tooltip-text" role="tooltip" id="tooltip-label">
+                <span class="tooltip-text" role="tooltip" id="tooltip-address-label">
                   Введите название улицы, дома и квартиры
                 </span>
               </span>                                         
@@ -347,14 +347,14 @@
         </li>
       </ul>
       <ul class="footer-navigation-list list-reset">
-        <li class="footer-navigation-item"><a class="footer-navigation-link footer-navigation-heart" href="#">Для поставщиков</a></li>
-        <li class="footer-navigation-item"><a class="footer-navigation-link" href="#">Наши документы</a></li>
-        <li class="footer-navigation-item"><a class="footer-navigation-link" href="#">О производстве</a></li>
-        <li class="footer-navigation-item"><a class="footer-navigation-link" href="#">Экологические стандарты</a></li>
+        <li class="footer-navigation-item"><a class="footer-navigation-link footer-navigation-heart link-style" href="#">Для поставщиков</a></li>
+        <li class="footer-navigation-item"><a class="footer-navigation-link link-style" href="#">Наши документы</a></li>
+        <li class="footer-navigation-item"><a class="footer-navigation-link link-style" href="#">О производстве</a></li>
+        <li class="footer-navigation-item"><a class="footer-navigation-link link-style" href="#">Экологические стандарты</a></li>
       </ul>
       <div class="copyright">
-        <a class="copyright-link-image" href="https://htmlacademy.ru/"><img src="images/icons/logo-htmlacademy.svg" width="93" height="27" alt="Логотип HTML Academy."></a>
-        <p class="copyright-text">Сделано в <a class="copyright-link-text" href="https://htmlacademy.ru/">.html academy</a> &copy; 2021</p>
+        <a class="copyright-link-image link-style" href="https://htmlacademy.ru/"><img src="images/icons/logo-htmlacademy.svg" width="93" height="27" alt="Логотип HTML Academy."></a>
+        <p class="copyright-text">Сделано в <a class="copyright-link-text link-style" href="https://htmlacademy.ru/">.html academy</a> &copy; 2021</p>
       </div>
     </footer>
   </body>

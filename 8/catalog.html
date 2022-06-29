@@ -10,7 +10,7 @@
   <body>
     <header class="main-header">
       <nav class="navigation">
-        <a class="navigation-logo" href="index.html"><img src="images/icons/logo-glaccy.svg" width="137" height="56" alt="Логотип Глейси."></a>
+        <a class="navigation-logo navigation-logo-active link-style" href="index.html"><img src="images/icons/logo-glaccy.svg" width="137" height="56" alt="Логотип Глейси."></a>
         <ul class="navigation-list list-reset">
           <li class="navigation-item">
             <a class="navigation-link navigation-link-selected">Каталог</a>
@@ -23,7 +23,7 @@
           </li>
         </ul>
 
-        <a class="phone-link" href="tel:+78005558628">+7 800 555-86-28</a>
+        <a class="phone-link link-style" href="tel:+78005558628">+7 800 555-86-28</a>
         <ul class="user-navigation-list list-reset">
           <li class="user-navigation-item">
             <a class="user-navigation-link user-navigation-search" href="#">
@@ -59,6 +59,9 @@
         <ul class="breadcrumbs-list list-reset">
           <li class="breadcrumbs-item">
             <a class="breadcrumbs-link" href="index.html">Главная</a>
+            <svg width="8" height="6" viewBox="0 0 8 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M1.35355 0.146447C1.15829 -0.0488155 0.841709 -0.0488155 0.646447 0.146447C0.451184 0.341709 0.451184 0.658291 0.646447 0.853553L2.79289 3L0.646447 5.14645C0.451184 5.34171 0.451184 5.65829 0.646447 5.85355C0.841709 6.04882 1.15829 6.04882 1.35355 5.85355L3.85355 3.35355C4.04882 3.15829 4.04882 2.84171 3.85355 2.64645L1.35355 0.146447ZM4.85352 0.146447C4.65826 -0.0488155 4.34168 -0.0488155 4.14642 0.146447C3.95115 0.341709 3.95115 0.658291 4.14642 0.853553L6.29286 3L4.14642 5.14645C3.95115 5.34171 3.95115 5.65829 4.14642 5.85355C4.34168 6.04882 4.65826 6.04882 4.85352 5.85355L7.35352 3.35355C7.54878 3.15829 7.54878 2.84171 7.35352 2.64645L4.85352 0.146447Z"/>
+            </svg>
           </li>
           <li class="breadcrumbs-item">
             <a class="breadcrumbs-link" href="#">Каталог</a>
@@ -82,7 +85,7 @@
           <fieldset class="catalog-filters-item catalog-filters-range">
             <legend class="filter-subtitle">Цена:</legend>
             
-              <!-- <label for="filter-price-from">
+              <label for="filter-price-from">
                 <span class="visually-hidden">От</span>
               </label>
               <input class="filter-price-input" type="number" name="price-from" value="100" id="filter-price-from">
@@ -93,10 +96,17 @@
               <input class="filter-price-input" type="number" name="price-to" value="500" id="filter-price-to">
               <span class="filter-subtitle">₽</span>
             
-            <p>
-              <input type="range" min="0" max="1000" value="100" step="10">
-              <input type="range" min="0" max="1000" value="500" step="10">
-            </p> -->
+              <div class="range">
+                <div class="range-scale">
+                  <div class="range-bar">
+                    <button class="range-toggle toggle-min" type="button">
+                      <span class="visually-hidden">Изменить минимальную цену.</span>
+                    </button>
+                    <button class="range-toggle toggle-max" type="button">
+                      <span class="visually-hidden">Изменить максимальную цену.</span>
+                    </button>
+                  </div>
+                </div>
           </fieldset>
 
           <fieldset class="catalog-filters-item catalog-filters-radio">
@@ -104,18 +114,22 @@
             <div class="catalog-filters-wrapper">
               <p>
                 <input type="radio" name="fatness" id="fatness1" value="0">
+                <span></span>
                 <label for="fatness1">0%</label>  
               </p>
               <p>
                 <input type="radio" name="fatness" id="fatness2" value="10">
+                <span></span>
                 <label for="fatness2">до 10%</label>
               </p>
               <p>
                 <input type="radio" name="fatness" id="fatness3" value="30">
+                <span></span>
                 <label for="fatness3">до 30%</label>
               </p>
               <p>
                 <input type="radio" name="fatness" id="fatness4" value="30-100">
+                <span></span>
                 <label for="fatness4">выше 30%</label>
               </p>
             </div>
@@ -127,22 +141,27 @@
             <div class="catalog-filters-wrapper">
               <p>
                 <input type="checkbox" name="ingredient-choсolate" id="ingredient-choсolate">
+                <span></span>
                 <label for="ingredient-choсolate">шоколадные</label>
               </p>
               <p>
                 <input type="checkbox" name="ingredient-sprinkles" id="ingredient-sprinkles">
+                <span></span>
                 <label for="ingredient-sprinkles">сахарные посыпки</label>
               </p>
               <p>
                 <input type="checkbox" name="ingredient-fruit" id="ingredient-fruit">
+                <span></span>
                 <label for="ingredient-fruit">фрукты</label>
               </p>
               <p>
                 <input type="checkbox" name="ingredient-syrup" id="ingredient-syrup">
+                <span></span>
                 <label for="ingredient-syrup">сиропы</label>
               </p>
               <p>
                 <input type="checkbox" name="ingredient-jam" id="ingredient-jam">
+                <span></span>
                 <label for="ingredient-jam">джемы</label>
               </p>
             </div>
@@ -416,14 +435,14 @@
         </li>
       </ul>
       <ul class="footer-navigation-list list-reset">
-        <li class="footer-navigation-item"><a class="footer-navigation-link footer-navigation-heart" href="#">Для поставщиков</a></li>
-        <li class="footer-navigation-item"><a class="footer-navigation-link" href="#">Наши документы</a></li>
-        <li class="footer-navigation-item"><a class="footer-navigation-link" href="#">О производстве</a></li>
-        <li class="footer-navigation-item"><a class="footer-navigation-link" href="#">Экологические стандарты</a></li>
+        <li class="footer-navigation-item"><a class="footer-navigation-link footer-navigation-heart link-style" href="#">Для поставщиков</a></li>
+        <li class="footer-navigation-item"><a class="footer-navigation-link link-style" href="#">Наши документы</a></li>
+        <li class="footer-navigation-item"><a class="footer-navigation-link link-style" href="#">О производстве</a></li>
+        <li class="footer-navigation-item"><a class="footer-navigation-link link-style" href="#">Экологические стандарты</a></li>
       </ul>
       <div class="copyright">
-        <a class="copyright-link-image" href="https://htmlacademy.ru/"><img src="images/icons/logo-htmlacademy.svg" width="93" height="27" alt="Логотип HTML Academy."></a>
-        <p class="copyright-text">Сделано в <a class="copyright-link-text" href="https://htmlacademy.ru/">.html academy</a> &copy; 2021</p>
+        <a class="copyright-link-image link-style" href="https://htmlacademy.ru/"><img src="images/icons/logo-htmlacademy.svg" width="93" height="27" alt="Логотип HTML Academy."></a>
+        <p class="copyright-text">Сделано в <a class="copyright-link-text link-style" href="https://htmlacademy.ru/">.html academy</a> &copy; 2021</p>
       </div>
     </footer>
   </body>
