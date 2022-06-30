@@ -13,6 +13,25 @@
         <ul class="navigation-list list-reset">
           <li class="navigation-item">
             <a class="navigation-link" href="catalog.html">Каталог</a>
+            <div class="popover popover-catalog">
+              <div class="popover-content">
+                <h2 class="popover-catalog-title">Новинки</h2>
+                <ul class="popover-catalog-list">
+                  <li class="popover-catalog-item">
+                    <a class="popover-catalog-link" href="#">Сливочное</a>
+                  </li>
+                  <li class="popover-catalog-item">
+                    <a class="popover-catalog-link" href="#">Щербеты</a>
+                  </li>
+                  <li class="popover-catalog-item">
+                    <a class="popover-catalog-link" href="#">Фруктовый лед</a>
+                  </li>
+                  <li class="popover-catalog-item">
+                    <a class="popover-catalog-link" href="#">Мелорин</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="#">Доставка и оплата</a>
@@ -30,6 +49,15 @@
               </svg> 
               <span class="visually-hidden">Поиск</span>
             </a>
+            <div class="popover popover-search">
+              <div class="popover-content">
+                <h2 class="visually-hidden">Поиск</h2>
+                <form action="" method="get">
+                  <label class="visually-hidden" for="input-search"></label>
+                  <input class="form-input" type="search" name="search" id="input-search" placeholder="Поиск по сайту">
+                </form>
+              </div>
+            </div>
           </li>
           <li class="user-navigation-item">
             <a class="user-navigation-link user-navigation-login" href="#">
@@ -38,6 +66,22 @@
               </svg>
               Вход
             </a>
+            <div class="popover popover-login">
+              <div class="popover-content">
+                <h2 class="popover-title">Личный кабинет</h2>
+                <form action="" method="post">
+                  <label class="visually-hidden" for="login-email">Ваш e-mail</label>  
+                  <input class="form-input login-form-input" type="email" name="email" id="login-email" placeholder="email@example.com">
+                  <label class="visually-hidden" for="login-password">Ваш пароль</label>
+                  <input class="form-input login-form-input" type="password" name="password" id="login-password" placeholder="Введите пароль">
+                  <div class="form-button-login-wrapper">
+                    <button class="button form-button form-button-login" type="submit">Войти</button>
+                    <a class="link-style" href="#">Забыли пароль?</a>
+                    <a class="link-style" href="#">Регистрация</a>
+                  </div> 
+                </form>
+              </div>
+            </div>
           </li>
           <li class="user-navigation-item">
             <a class="user-navigation-link user-navigation-basket"  href="#">
@@ -47,6 +91,42 @@
               <span class="visually-hidden">Корзина</span>
               2 товара
             </a>
+            <div class="popover popover-basket">
+              <div class="popover-content">
+                <h2 class="popover-title">Корзина</h2>
+                <ul class="popover-basket-list list-reset">
+                  <li class="popover-basket-item">
+                    <img src="images/content/raspberry.jpg" width="46" height="46" alt="Шарик мороженого Малинка.">
+                    <div class="basket-item-descript">
+                      <h3>Малинка</h3>
+                      <p>1 кг х 310 ₽</p>
+                    </div>
+                    <p class="popover-basket-item-price">310 ₽</p>
+                    <button class="popover-basket-item-delete">
+                      <span class="visually-hidden">Удалить товар из корзины</span>
+                    </button>
+                  </li>
+                  <li class="popover-basket-item">
+                    <img src="images/content/bubble-gum.jpg" width="46" height="46" alt="Шарик мороженого Бабл-гам">
+                    <div class="basket-item-descript">
+                      <h3>Бабл-гам</h3>
+                      <p>1,5 кг х 320 ₽</p>
+                    </div>                  
+                    <p class="popover-basket-item-price">480 ₽</p>
+                    <button class="popover-basket-item-delete">
+                      <span class="visually-hidden">Удалить товар из корзины</span>
+                    </button>
+                  </li>
+                </ul>
+                <div class="popover-basket-order">
+                  <a class="button form-button popover-button" href="#">Оформить заказ</a>
+                  <p class="popover-basket-total">Итого: 790 ₽</p>
+                </div>           
+              </div>
+            </div>
+            <div class="popover popover-basket-empty">
+              <h2>Ваша корзина пока пуста</h2>
+            </div>
           </li>
         </ul>
       </nav>
@@ -60,6 +140,7 @@
             <h3>Нежный пломбир<br>с клубничным джемом</h3>
             <p>Натуральное мороженое из свежих сливок и молока с вкуснейшим клубничным джемом – это идеальный десерт для всей семьи. </p>
             <a  href="#" class="button main-button main-button-slider">Заказать</a> 
+            
           </li>
           <li class="slider-item">
             <h3>Сливочное мороженое со вкусом банана</h3>
@@ -135,7 +216,7 @@
           <li class="promotion-item promotion-item-marshmallow">
             <h4>Маршмеллоу даром!</h4>
             <p>При покупке 2 кг пломбира добавим в ваш заказ упаковку нежных зефирок совершенно бесплатно.</p>
-            <a href="#" class="button main-button">Хочу подарок</a>
+            <a href="#" class="button main-button main-button-disabled" tabindex="-1">Хочу подарок</a>
           </li>
         </ul>
       </section>
@@ -153,7 +234,7 @@
               <p class="catalog-item-descript">Сливочное мороженое с малиновым джемом</p>
               <div class="catalog-basket-wrapper">
                 <span class="catalog-item-price">310 ₽/кг</span>
-                <a class="catalog-item-basket" href="#">
+                <a class="catalog-item-basket basket-disabled" tabindex="-1" href="#">
                   <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M1.17.1a.67.67 0 1 0 0 1.34h1.77l.47 2.34v.05l.97 4.83a1.83 1.83 0 0 0 1.82 1.47h5.62a1.83 1.83 0 0 0 1.82-1.47l.93-4.86a.67.67 0 0 0-.66-.8h-9.3L4.14.65a.67.67 0 0 0-.66-.53H1.17Zm4.52 8.3-.81-4.06h8.23l-.78 4.07a.5.5 0 0 1-.49.39H6.18a.5.5 0 0 1-.49-.4Zm-1.13 3.96a1.25 1.25 0 1 1 2.49 0 1.25 1.25 0 0 1-2.5 0Zm6.37 0a1.25 1.25 0 1 1 2.5 0 1.25 1.25 0 0 1-2.5 0Z" />
                   </svg>
@@ -356,5 +437,24 @@
         <p class="copyright-text">Сделано в <a class="copyright-link-text link-style" href="https://htmlacademy.ru/">.html academy</a> &copy; 2021</p>
       </div>
     </footer>
+    <div class="modal-container">
+      <div class="modal modal-feedback">
+        <button class="modal-close-button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <section class="modal-content">
+          <h2 class="modal-title">Мы обязательно ответим вам!</h2> 
+          <form action="" method="post">
+            <label class="visually-hidden" for="modal-name"></label>
+            <input class="form-input" type="text" id="modal-name" placeholder="Имя и фамилия">
+            <label class="visually-hidden" for="modal-email"></label>
+            <input class="form-input" type="email" id="modal-email" placeholder="email@example.com">
+            <label class="visually-hidden" for="modal-text"></label>
+            <textarea class="form-input" name="" id="modal-text"  rows="10" placeholder="В свободной форме"></textarea>
+            <button class="button form-button modal-form-button" type="submit">Отправить</button>
+          </form>
+        </section>  
+      </div>
+    </div>
   </body>
 </html>
