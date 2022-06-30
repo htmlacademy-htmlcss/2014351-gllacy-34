@@ -92,7 +92,7 @@ body {
     justify-content: flex-start;
     align-items: center;
 
-    padding: 24px 0 32px;
+    padding: 24px 0;
 }
 
 .navigation-list {
@@ -100,6 +100,7 @@ body {
     flex-wrap: wrap;
 
     max-width: 553px;
+    margin-left: 16px;
 }
 
 .navigation-logo {
@@ -131,7 +132,7 @@ body {
     line-height: 20px;
     color: inherit;
 
-    padding: 8px 12px;
+    padding: 8px 14px;
     border: 2px solid transparent;
     border-radius: 30px;
 }
@@ -142,7 +143,7 @@ body {
     line-height: 20px;
     color: inherit;
 
-    padding: 6px 14px 6px 36px;
+    padding: 4px 14px 4px 36px;
     border: 2px solid transparent;
     border-radius: 20px;
     display: block;
@@ -164,7 +165,7 @@ body {
 }
 
 .user-navigation-search {
-    padding: 16px;
+    padding: 14px;
 }
 
 .user-navigation-search .user-navigation-icon {
@@ -179,14 +180,14 @@ body {
     fill: #2D3440;
 
     position: absolute;
-    left: 14px;
-    top: 8px;
+    left: 13px;
+    top: 7px;
 }
 
 .slider {
     display: grid;
     grid-template-columns: 540px auto;
-    padding-top: 24px;
+    padding-top: 20px;
 }
 
 .slider-item {
@@ -375,7 +376,7 @@ body {
 .button {
     display: inline-block;
 
-    padding: 10px 32px;
+    padding: 10px 30px;
 
     font-family: inherit;
     font-size: 16px;
@@ -455,12 +456,12 @@ body {
     font-weight: 700;
 
     margin: 0;
-    margin-bottom: 24px;
+    margin-bottom: 28px;
 }
 
 .promotion-item p {
     margin: 0;
-    margin-bottom: 24px;
+    margin-bottom: 28px;
 }
 
 .catalog .subtitle {
@@ -574,7 +575,7 @@ body {
 
     border-radius: 16px;
 
-    padding: 56px 40px 66px; 
+    padding: 56px 40px; 
 }
 
 .advantages-wrapper .subtitle {
@@ -1276,6 +1277,7 @@ input[type="checkbox"]:checked + label .control-checkbox {
 
 .pagination-main-button {
     margin: 0 auto;
+    display: block;
 }
 
 .pagination-wrapper {
@@ -1647,12 +1649,12 @@ input[type="checkbox"]:checked + label .control-checkbox {
     color: #2D3440;
 }
 
-.form-input:invalid {
+.form-input-error {
     border-color: #EA5454;
 }
 
-.form-input:invalid:hover,
-.form-input:invalid:focus {
+.form-input-error:hover,
+.form-input-error:focus {
     outline: 2px solid #EA5454;
 }
 

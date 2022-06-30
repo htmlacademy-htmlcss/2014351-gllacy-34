@@ -54,7 +54,7 @@
                 <h2 class="visually-hidden">Поиск</h2>
                 <form action="" method="get">
                   <label class="visually-hidden" for="input-search"></label>
-                  <input class="form-input" type="search" name="search" id="input-search" placeholder="Поиск по сайту">
+                  <input class="form-input" type="search" name="search" id="input-search" placeholder="Поиск по сайту" required>
                 </form>
               </div>
             </div>
@@ -71,9 +71,9 @@
                 <h2 class="popover-title">Личный кабинет</h2>
                 <form action="" method="post">
                   <label class="visually-hidden" for="login-email">Ваш e-mail</label>  
-                  <input class="form-input login-form-input" type="email" name="email" id="login-email" placeholder="email@example.com">
+                  <input class="form-input login-form-input" type="email" name="email" id="login-email" placeholder="email@example.com" required>
                   <label class="visually-hidden" for="login-password">Ваш пароль</label>
-                  <input class="form-input login-form-input" type="password" name="password" id="login-password" placeholder="Введите пароль">
+                  <input class="form-input login-form-input" type="password" name="password" id="login-password" placeholder="Введите пароль" required>
                   <div class="form-button-login-wrapper">
                     <button class="button form-button form-button-login" type="submit">Войти</button>
                     <a class="link-style" href="#">Забыли пароль?</a>
@@ -140,7 +140,7 @@
             <h3>Нежный пломбир<br>с клубничным джемом</h3>
             <p>Натуральное мороженое из свежих сливок и молока с вкуснейшим клубничным джемом – это идеальный десерт для всей семьи. </p>
             <a  href="#" class="button main-button main-button-slider">Заказать</a> 
-            
+
           </li>
           <li class="slider-item">
             <h3>Сливочное мороженое со вкусом банана</h3>
@@ -216,7 +216,7 @@
           <li class="promotion-item promotion-item-marshmallow">
             <h4>Маршмеллоу даром!</h4>
             <p>При покупке 2 кг пломбира добавим в ваш заказ упаковку нежных зефирок совершенно бесплатно.</p>
-            <a href="#" class="button main-button main-button-disabled" tabindex="-1">Хочу подарок</a>
+            <a href="#" class="button main-button">Хочу подарок</a>
           </li>
         </ul>
       </section>
@@ -334,7 +334,7 @@
             <p>Подпишитесь на нашу сладкую рассылку и будьте всегда<br>в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
             <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
               <label class="visually-hidden" for="subscribe-email">Ваша почта</label>
-              <input class="form-input subscribe-form-input" type="email" name="subscribe-email" id="subscribe-email" placeholder="email@example.com">
+              <input class="form-input subscribe-form-input" type="email" name="subscribe-email" id="subscribe-email" placeholder="email@example.com" required>
               <button class="button form-button" type="submit">Отправить</button>
             </form>
           </div> 
@@ -362,11 +362,11 @@
                   Укажите желаемую дату, и мы свяжемся с вами для подтверждения брони
                 </span>
               </span>
-              <input  class="form-input" type="text" name="delivery-date" id="delivery-date" placeholder="01.04.2020">
+              <input  class="form-input" type="text" name="delivery-date" id="delivery-date" placeholder="01.04.2020" required>
             </p>
             <p class="delivery-form-group delivery-form-group-phone">
               <label class="delivery-form-label" for="delivery-phone">Телефон</label>
-              <input  class="form-input" type="tel" name="delivery-phone" id="delivery-phone" placeholder="+7 800 999-00-00">
+              <input  class="form-input" type="tel" name="delivery-phone" id="delivery-phone" placeholder="+7 800 999-00-00" required>
             </p>
             <p class="delivery-form-group delivery-form-group-address">
               <label class="delivery-form-label delivery-form-info" for="delivery-address">Адрес</label>
@@ -380,7 +380,7 @@
                   Введите название улицы, дома и квартиры
                 </span>
               </span>                                         
-              <input  class="form-input" type="text" name="delivery-address" id="delivery-address" placeholder="ул. Большая Конюшенная, 19/8">
+              <input  class="form-input" type="text" name="delivery-address" id="delivery-address" placeholder="ул. Большая Конюшенная, 19/8" required>
             </p>
             <button class="button form-button delivery-form-button" type="submit">Отправить</button>
           </form>
@@ -446,11 +446,11 @@
           <h2 class="modal-title">Мы обязательно ответим вам!</h2> 
           <form action="" method="post">
             <label class="visually-hidden" for="modal-name"></label>
-            <input class="form-input" type="text" id="modal-name" placeholder="Имя и фамилия">
+            <input class="form-input" type="text" id="modal-name" placeholder="Имя и фамилия" required>
             <label class="visually-hidden" for="modal-email"></label>
-            <input class="form-input" type="email" id="modal-email" placeholder="email@example.com">
+            <input class="form-input" type="email" id="modal-email" placeholder="email@example.com" required>
             <label class="visually-hidden" for="modal-text"></label>
-            <textarea class="form-input" name="" id="modal-text"  rows="10" placeholder="В свободной форме"></textarea>
+            <textarea class="form-input" name="" id="modal-text"  rows="10" placeholder="В свободной форме" required></textarea>
             <button class="button form-button modal-form-button" type="submit">Отправить</button>
           </form>
         </section>  
