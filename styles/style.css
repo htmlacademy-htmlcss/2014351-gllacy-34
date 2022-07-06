@@ -1206,7 +1206,6 @@ input[type="radio"]:checked + .control-radio::before {
     width: 16px;
     height: 16px;
     -webkit-mask-image: url("../images/icons/checkbox-border.svg");
-            mask-image: url("../images/icons/checkbox-border.svg");
     mask-image: url("../images/icons/checkbox-border.svg");
     background-color: #2D3440;
     position: absolute;
@@ -1216,7 +1215,6 @@ input[type="radio"]:checked + .control-radio::before {
 
 input[type="checkbox"]:checked + .control-checkbox {
     -webkit-mask-image: url("../images/icons/checkbox.svg");
-            mask-image: url("../images/icons/checkbox.svg");
     mask-image: url("../images/icons/checkbox.svg");
 }
 
